@@ -1,0 +1,13 @@
+/*
+ * @Description: 布局函数
+ * @Date: 2019-06-25 12:14:49
+ * @LastEditors: HenryDong
+ * @LastEditTime: 2019-06-27 18:24:56
+ */
+
+@charset "UTF-8";
+@mixin flex($direction: column, $inline: block) {
+  display: if($inline == block, flex, inline-flex);
+  flex-direction: $direction;
+  flex-wrap: wrap;
+}
